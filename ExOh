@@ -1,0 +1,30 @@
+def ExOh(str)
+
+  # code goes here
+  a=str.split(//)
+  i=0
+  x=0
+  o=0
+  
+  while i<a.length
+    if(a[i]=='x')
+      x += 1
+    elsif (a[i]=='o')
+      o += 1
+    end
+    	i+=1
+    
+  end
+  
+  if(x==o)
+    return "true"
+  else 
+    return "false"
+  end
+  
+
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+ExOh(STDIN.gets)           

@@ -1,0 +1,17 @@
+def SecondGreatLow(arr)
+
+  # code goes here
+  
+  if arr.length==2
+    return arr.min.to_s + " " + arr.max.to_s
+  else
+    arr.delete(arr.max)
+    arr.delete(arr.min)
+ 	 return arr.max.to_s + " "+ arr.min.to_s
+  end
+         
+end
+
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+SecondGreatLow(STDIN.gets)           
